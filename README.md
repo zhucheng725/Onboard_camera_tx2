@@ -2,8 +2,10 @@
 Onboard_camera_tx2
 
 import cv2
+
 def open_cam_onboard(width, height):
-    # On versions of L4T prior to 28.1, add 'flip-method=2' into gst_str
+
+    # On versions of L4T prior to 28.1, add 'flip-method=2' into gst_st
     gst_str = ('nvcamerasrc ! '
                'video/x-raw(memory:NVMM), '
                'width=(int)2592, height=(int)1458, '
@@ -15,15 +17,18 @@ def open_cam_onboard(width, height):
     return cv2.VideoCapture(gst_str, cv2.CAP_GSTREAMER)
 
 cap = open_cam_onboard(448, 448)
+
 #cap = open_cam_onboard(1920, 1080)
+
 while(1):
 
     ret,frame = cap.read()
-
     cv2.imshow('cap', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+        
 cap.release()
+
 cv2.destroyAllWindows()
 
 
