@@ -1,6 +1,6 @@
 # Onboard_camera_tx2
-Onboard_camera_tx2
 
+```
 import cv2
 
 def open_cam_onboard(width, height):
@@ -30,5 +30,5 @@ while(1):
 cap.release()
 
 cv2.destroyAllWindows()
-
+```
 
