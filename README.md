@@ -26,6 +26,7 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 
-Pressing 'q' can kill this window
+To press 'q' can kill this window<br>
+
 ![image](https://github.com/zhucheng725/Onboard_camera_tx2/blob/master/Screenshot%20from%202019-03-01%2015-49-05.png)
 
